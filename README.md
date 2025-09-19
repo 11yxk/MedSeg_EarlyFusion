@@ -1,7 +1,7 @@
 # MedSeg_EarlyFusion
 
 
-Pytorch implementation of paper '' A Text-Image Fusion Method with Data Augmentation Capabilities for Referring Medical Image Segmentation '',the code will be updataed progressively.
+Pytorch implementation of paper '' A Text-Image Fusion Method with Data Augmentation Capabilities for Referring Medical Image Segmentation '', the code will be updataed progressively.
 
 
 # Data Preparation
