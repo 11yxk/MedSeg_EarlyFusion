@@ -1,0 +1,57 @@
+TRAIN:
+  train_batch_size: 8
+  lr: 0.0001
+
+  valid_batch_size: 8
+
+  min_epochs: 100
+  max_epochs: 100
+  patience: 100000
+
+  device: 1
+
+  model_save_filename: medseg
+
+# CUDA_VISIBLE_DEVICES=1 tsp python train.py --model_name utils.githubUNET.github_UNET.UNet --dataset_name kvasir --expriment_name norm
+# CUDA_VISIBLE_DEVICES=1 tsp python train.py --model_name utils.githubUNET.github_UNET_aug.UNet --dataset_name kvasir  --expriment_name test
+# CUDA_VISIBLE_DEVICES=1 python train.py --model_name utils.githubUNET.github_UNET_aug_text_gene.UNet --dataset_name kvasir  --expriment_name flip
+# CUDA_VISIBLE_DEVICES=1 python train.py --model_name utils.githubUNET.github_UNET_text_gene.UNet --dataset_name kvasir  --expriment_name v1
+# CUDA_VISIBLE_DEVICES=1 python train.py --model_name utils.githubUNET.github_UNET_text.UNet --dataset_name kvasir  --expriment_name v1
+# CUDA_VISIBLE_DEVICES=1 python train.py --model_name utils.githubUNET.github_UNET_aug_text_img_gene.UNet --dataset_name kvasir  --expriment_name light
+# CUDA_VISIBLE_DEVICES=1 tsp python train.py --model_name utils.githubUNET.github_UNET_text_gene_detach.UNet --dataset_name kvasir  --expriment_name detach
+# CUDA_VISIBLE_DEVICES=1 tsp python train.py --model_name utils.githubUNET.github_UNET_aug_text_gene_detach.UNet --dataset_name kvasir  --expriment_name detach
+
+
+# CUDA_VISIBLE_DEVICES=1 python train.py --model_name utils.missformer.missformer_aug_text_gene.MISSFormer --dataset_name kvasir  --expriment_name norm
+# CUDA_VISIBLE_DEVICES=1 python train.py --model_name utils.missformer.missformer_aug_text.MISSFormer --dataset_name kvasir  --expriment_name norm
+# CUDA_VISIBLE_DEVICES=1 tsp python train.py --model_name utils.missformer.missformer_aug.MISSFormer --dataset_name kvasir  --expriment_name norm
+# CUDA_VISIBLE_DEVICES=1 tsp python train.py --model_name utils.missformer.missformer.MISSFormer --dataset_name kvasir --expriment_name norm
+# CUDA_VISIBLE_DEVICES=1 tsp python train.py --model_name utils.missformer.missformer_text.MISSFormer --dataset_name kvasir --expriment_name norm
+# CUDA_VISIBLE_DEVICES=1 tsp python train.py --model_name utils.missformer.missformer_text_gene.MISSFormer --dataset_name kvasir  --expriment_name norm
+
+
+
+
+
+# CUDA_VISIBLE_DEVICES=1 tsp python train.py --model_name utils.transunet.transunet.VisionTransformer --dataset_name kvasir  --expriment_name norm
+# CUDA_VISIBLE_DEVICES=1 tsp python train.py --model_name utils.transunet.transunet_aug.VisionTransformer --dataset_name kvasir  --expriment_name norm
+# CUDA_VISIBLE_DEVICES=1 tsp python train.py --model_name utils.transunet.transunet_text.VisionTransformer --dataset_name kvasir  --expriment_name norm
+# CUDA_VISIBLE_DEVICES=1 python train.py --model_name utils.transunet.transunet_aug_text.VisionTransformer --dataset_name kvasir  --expriment_name norm
+# CUDA_VISIBLE_DEVICES=1 tsp python train.py --model_name utils.transunet.transunet_text_gene.VisionTransformer --dataset_name kvasir  --expriment_name norm
+# CUDA_VISIBLE_DEVICES=1 python train.py --model_name utils.transunet.transunet_aug_text_gene.VisionTransformer --dataset_name kvasir  --expriment_name norm
+
+
+# CUDA_VISIBLE_DEVICES=1 python train.py --model_name utils.Unet3plus.unet3.UNet_3Plus --dataset_name kvasir  --expriment_name norm
+# CUDA_VISIBLE_DEVICES=1 tsp python train.py --model_name utils.Unet3plus.unet3_text.UNet_3Plus --dataset_name kvasir  --expriment_name norm
+# CUDA_VISIBLE_DEVICES=1 tsp python train.py --model_name utils.Unet3plus.unet3_aug.UNet_3Plus --dataset_name kvasir  --expriment_name norm
+# CUDA_VISIBLE_DEVICES=1 tsp python train.py --model_name utils.Unet3plus.unet3_text_gene.UNet_3Plus --dataset_name kvasir  --expriment_name norm
+# CUDA_VISIBLE_DEVICES=1 tsp python train.py --model_name utils.Unet3plus.unet3_text_aug.UNet_3Plus --dataset_name kvasir  --expriment_name norm
+# CUDA_VISIBLE_DEVICES=1 tsp python train.py --model_name utils.Unet3plus.unet3_text_aug_gene.UNet_3Plus --dataset_name kvasir  --expriment_name norm
+
+
+# CUDA_VISIBLE_DEVICES=1 python train.py --model_name utils.unet_plus.unet_plus.NestedUNet --dataset_name kvasir  --expriment_name norm
+# CUDA_VISIBLE_DEVICES=1 tsp python train.py --model_name utils.unet_plus.unet_plus_aug.NestedUNet --dataset_name kvasir  --expriment_name norm
+# CUDA_VISIBLE_DEVICES=1 tsp python train.py --model_name utils.unet_plus.unet_plus_text.NestedUNet --dataset_name kvasir  --expriment_name norm
+# CUDA_VISIBLE_DEVICES=1 tsp python train.py --model_name utils.unet_plus.unet_plus_text_gene.NestedUNet --dataset_name kvasir  --expriment_name norm
+# CUDA_VISIBLE_DEVICES=1 tsp python train.py --model_name utils.unet_plus.unet_plus_aug_text.NestedUNet --dataset_name kvasir  --expriment_name norm
+# CUDA_VISIBLE_DEVICES=1 python train.py --model_name utils.unet_plus.unet_plus_aug_text_gene.NestedUNet --dataset_name kvasir  --expriment_name v1
